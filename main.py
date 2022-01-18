@@ -15,5 +15,8 @@ async def on_message(message):
 
   if message.content.startswith('$hello'):
     await message.channel.send('Hello Bina Darma Cyber Army !')
+  
+  if message.content.startswith('$author'):
+    await message.channel.send('My author is ekovegeance')
 
-client.run(os.getenv('TOKEN'))
+client.run(os.environ['TOKEN'])
